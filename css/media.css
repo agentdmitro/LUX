@@ -1,0 +1,330 @@
+@media (max-width: 800px) {
+    body.lock {
+      overflow: hidden;
+    }
+  
+    .header__body {
+      height: 50px;
+    }
+    .header__inner{
+        justify-content: start;
+    }
+    .header__logo{
+        margin-right: 30px;
+    }
+    .header__contact{
+        margin-left: auto;
+    }
+    .header__logo {
+      flex: 0 0 40px;
+    }
+    .header__list li + li {
+         margin-left: 0px;
+    }
+    .header__list li{
+        margin-right: auto;
+    }
+    
+    .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3;
+    }
+  
+    .header__burger span {
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+    }
+  
+    .header__burger:before,
+  .header__burger:after {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+  
+    .header__burger:before {
+      top: 0;
+    }
+  
+    .header__burger:after {
+      bottom: 0;
+    }
+  
+    .header__burger.active:before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+  
+    .header__burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+  
+    .header__burger.active span {
+      transform: scale(0);
+    }
+  
+    .header__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /*для прокрутки меню, когда оно не помещается в экран*/
+      overflow: auto;
+      background-color: rgba(16, 17, 17, 0.534);
+      padding: 70px 10px 20px 10px;
+      transition: all 0.3s ease 0s;
+    }
+  
+    .header__menu.active {
+      top: 0;
+    }
+  
+    .header__list {
+      display: block;
+      margin-top: 32px;
+    }
+  
+    .header__list li {
+      margin: 0 0 20px 0;
+    }
+  
+    .header__link {
+      font-size: 24px;
+    }
+  }
+  .content {
+    padding: 100px 0 0 0;
+  }
+@media(max-width:1200px){
+    .benefits__inner{
+        display: block;
+        text-align: center;
+    }
+    .benefits__img{
+        margin-left: 0;
+        margin-bottom: 29px;
+    }
+    .benefits__content{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .benefits__info{
+        text-align: center;
+    }
+    .benefits__info-play{
+        margin-left: 0;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+.benefits__list-item:nth-child(1),
+.benefits__list-item:nth-child(7){
+    margin-right: 0px;
+}
+.benefits__list-item:nth-child(7){
+    text-align: left;
+}
+.benefits__list-item:nth-child(2),
+.benefits__list-item:nth-child(6){
+    margin-right: 0px;
+}
+.benefits__list-item:nth-child(3),
+.benefits__list-item:nth-child(5){
+    margin-right: 0px;
+}
+.benefits__list-item:nth-child(4){
+    margin-right: 0px;
+}
+
+
+.benefits__list{
+    display: block;
+    text-align: left;
+}
+.benefits__list-block{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.benefits__list-item{
+    width: 25%;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.benefits__list-item + .benefits__list-item{
+    margin-left: 0;
+}
+}
+
+@media(max-width: 1075px){
+    .main__inner{
+        display: block;
+    }
+    .main__title{
+        padding-top: 20px;
+    }
+    .main__subtitle{
+        margin: 0 auto 79px;
+    }
+    .main__btn{
+        margin-bottom: 70px;
+    }
+    .main__info{
+        margin-bottom: 50px;
+    }
+    .swiper__container{
+        width: 475px;
+        margin: 0 auto;
+    }
+    .main__slider{
+        margin-left: 0;
+    }
+    .swiper__info{
+        margin-bottom: 59px;
+    }
+    .main__boxes{
+        width: 450px;
+        margin: 0 auto 10px;
+    }
+    .benefits__list-item{
+        width: 50%;
+    }
+    .benefits__list-item:nth-child(7){
+        text-align: center;
+    }
+    .form__inner{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(max-width: 620px){
+    .swiper__img{
+        width: 99%;
+    }
+    .main__box + .main__box{
+        margin-top: 20px;
+    }
+    .main__boxes{
+        max-width: 150px;
+    }
+    .terms__inner{
+        display: block;
+    }
+    .terms__info{
+        margin: 0 auto 40px;
+    }
+    .terms__info{
+        text-align: center;
+    }
+    .benefits__img{
+        width: 90%;
+    }
+    .form__img{
+        width: 99%;
+    }
+}
+@media(max-width: 611px){ 
+
+    .terms__box{
+        margin: 0px 0px 20px 0px;
+    }
+    .terms__boxes{
+        width: 250px;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: auto;
+    }
+}
+@media(max-width: 526px){
+    .benefits__list-item{
+        width: 100%;
+    }
+    .benefits__list-item{
+        font-weight: 600;
+    }
+}
+@media(max-width: 476px){
+.swiper-container{
+    height: 360px;
+}
+.form__content{
+    padding-top: 25px;
+}
+input{
+    width: 80%;
+}
+}
+
+@media(max-width:900px){
+    .footer__inner{
+        display: block;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .footer__btn{
+        margin-bottom: 60px;
+    }
+    .footer__list{
+        width: 480px;
+        text-align: center;
+        margin: 0 auto 20px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .footer{
+        height: 280px;
+    }
+    .footer__contact {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:500px){
+    .footer__menu{
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .footer__btn{
+        margin-bottom: 40px;
+    }
+    .footer{
+        height: 400px;
+    }
+    .footer__menu{
+        text-align: center;
+    }
+    .footer__menu li + li {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .footer__list{
+        width: 100%;
+    }
+}
+@media(max-width:400px){
+    .swiper__buttons{
+        display: block;
+    }
+    .swiper__info{
+        margin-bottom: 40px;
+    }
+    .swiper__btn{
+        margin-bottom: 30px;
+    }
+}
